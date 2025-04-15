@@ -1,0 +1,12 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "5002:5002"
+
+  ui:
+    build: ./ui
+    ports:
+      - "3002:3002"
+    stdin_open: true
+    tty: true
